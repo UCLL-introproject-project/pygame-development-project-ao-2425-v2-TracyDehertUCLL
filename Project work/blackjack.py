@@ -12,7 +12,7 @@ for suit in suits:
     for rank in ranks:
         cards.append([suit, rank])
 
-card_value = cards[0]
+#card_value = voor elke kaart is index [1] de waarde en index [0] is het symbool
 decks = 2
 WIDTH = 800
 HEIGHT = 800
@@ -74,21 +74,20 @@ def draw_cards(player, dealer, reveal):
 #adjusted entire code to accept my cards list and look at only the card rank for scoring
 def calculate_score(hand):
     hand_score = 0
-    aces_count = hand[1].count('A')
-    for i in range(len(hand)):
-        for j in range(8):
-            if hand[i][1] == cards[j][1]:
-                hand_score += int(hand[i][1])
+    aces_count = sum(1 for card in hand if card[1] == 'A')
+    for card in hand:
+        value = card[1]
 
-        if hand[i][1] in ['10', 'J', 'Q', 'K']:
+        if value in ['10', 'J', 'Q', 'K']:
             hand_score += 10
-        elif hand[i][1] == 'A':
+        elif value == 'A':
             hand_score += 11
+        else:
+            hand_score += int(value)
 
     if hand_score > 21 and aces_count > 0:
-        for i in range(aces_count):
-            if hand_score > 21:
-                hand_score -= 10
+        hand_score -= 10
+        aces_count -= 1
     return hand_score     
 
 def draw_game(act, record, result):

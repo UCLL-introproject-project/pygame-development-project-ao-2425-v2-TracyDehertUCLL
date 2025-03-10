@@ -1,0 +1,9 @@
+Beste Mevr. Verdeyen,
+Mijn naam is Tracy Dehert en ik ben eerstejaarsstudent in het afstandstraject toegepaste informatica. Ik ben momenteel voor het vak introductieproject bezig met de opbouw van mijn project. Het gaat om het maken van een spelletje blackjack aan de hand van een YouTube video. Dit is goed gelukt en ik heb ondertussen ook zelf enkele zaken toegevoegd aan de basis van mijn project.
+Ik heb een extra knop toegevoegd om het spel af te sluiten, alsook enkele geluiden gebaseerd op de uitkomst van het spel. Indien er gelijkspel is, een kort deuntje, bij verlies een trompet en bij winst applaus.
+Ik heb in mijn project ook een aanpassing aan de kaarten gemaakt waardoor ze niet alleen de waarde weergeven maar ook hun symbool (harten, klaveren, schoppen, ruiten). De aanpassing werkt maar aangezien ik zelf pas begin met het leren van Python ben ik niet zeker of dit de beste of meest efficiënte manier is om dit te doen.
+Ik vroeg mij af of u eventueel even tijd zou hebben om naar mijn code te kijken en mij hierover feedback te geven? Indien gewenst, kan ik het nodige deel van mijn code doorsturen.
+Daarnaast vroeg ik mij ook af of de 3 aanpassingen die ik tot nu toe al gedaan heb voldoende zijn of of ik best nog iets zou toevoegen?
+Alvast bedankt voor uw tijd!
+Vriendelijke groeten,
+Tracy Dehert
