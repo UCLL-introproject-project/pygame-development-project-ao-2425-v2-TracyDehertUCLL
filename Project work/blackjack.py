@@ -4,11 +4,11 @@ import pygame;
 pygame.init()
 
 #added suits to my cards:
-suits = ['\u2663', '\u2665', '\u2666', '\u2660']
+suits = {"Heart": "\u2665", "Diamond": "\u2666", "Club": "\u2663", "Spade": "\u2660"}
 ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 cards = []
 
-for suit in suits:
+for key, suit in suits.items():
     for rank in ranks:
         cards.append([suit, rank])
 
