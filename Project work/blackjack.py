@@ -20,6 +20,7 @@ screen = pygame.display.set_mode([WIDTH, HEIGHT])
 pygame.display.set_caption('Pygame Blackjack!')
 fps = 60
 timer = pygame.time.Clock()
+#changed font because the previous font did not display the suits
 font = pygame.font.SysFont('segoeui', 44)
 small_font = pygame.font.SysFont('segoeui', 36)
 active = False
@@ -111,9 +112,9 @@ def draw_game(act, record, result):
         button_list.append(stand)
         score_text = small_font.render(f'Wins:{record[0]}      Losses: {record[1]}    Draws: {record[2]}', True, 'white')
         screen.blit(score_text, (150, 750))
+        #added exit button to game
         exit = pygame.draw.rect(screen, 'white', [500, 20, 200, 80], 0, 5)
         pygame.draw.rect(screen, 'green', [500, 20, 200, 80], 3, 5)
-        #added exit button to game
         exit_text = small_font.render('Exit game', True, 'black')
         screen.blit(exit_text, (525, 35))
         button_list.append(exit)
