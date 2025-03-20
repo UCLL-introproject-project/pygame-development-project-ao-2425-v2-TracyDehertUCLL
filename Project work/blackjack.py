@@ -44,10 +44,10 @@ loss_sound = pygame.mixer.Sound('Project work/Loss.mp3')
 
 #All the screen sizing has been adjusted for a bigger width and smaller heighth and also to look nice on my pc screen(might look wonky on other sizes)
 def deal_cards(current_hand, current_deck):
-    card = random.randint(0, len(current_deck))
-    current_hand.append(current_deck[card-1])
-    current_deck.pop(card-1)
-    return(current_hand, current_deck)
+    card = random.randint(0, len(current_deck)-1)
+    current_hand.append(current_deck[card])
+    current_deck.pop(card)
+    return current_hand, current_deck
 
 def draw_scores(player, dealer):
     screen.blit(font.render(f'score[{player}]', True, 'white'), (500, 450))
